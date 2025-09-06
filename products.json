@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Dog Food",
+        "price": 6000,
+        "image": "image/img2.png"
+    },
+    {
+        "id": 2,
+        "name":" Cat Bed",
+        "price": 4000,
+        "image": "image/img3.png"
+    },
+    {
+        "id": 3,
+        "name":" Bird Feeder",
+        "price": 300,
+        "image": "image/img4.png"
+    },
+    {
+        "id": 4,
+        "name":" Cat Food",
+        "price": 6000,
+        "image": "image/img5.png"
+    },
+    {
+        "id": 5,
+        "name":" Cat Litter",
+        "price": 4000,
+        "image": "image/img6.png"
+    },
+    {
+        "id": 6,
+        "name":"Hamster Cage ",
+        "price": 300,
+        "image": "image/img7.png"
+    },
+    {
+        "id": 7,
+        "name":" Carriage Handbag",
+        "price": 1800,
+        "image": "image/img8.png"
+    },
+    {
+        "id": 8,
+        "name":" Rabbit Food",
+        "price": 400,
+        "image": "image/img9.png"
+    }
+
+]

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinu's</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+    
+</head>
+<body>
+    <style>
+        .title {
+            font-family: 'Satisfy', cursive;
+            color: black; 
+            text-align: center; 
+            margin: 10px 0;
+        }
+        .nav-logo img {
+        border-radius: 50%; 
+    }
+    </style>
+    <h1 class="title">Shinu's</h1>
+    <header>
+        
+            
+            
+        </div>
+        <nav>
+            <div class="logo">Pet Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#policies">Policies</a></li>
+            </ul>
+            <form class="search-bar" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+
+            
+            
+            <button class="cart" onclick="handleCartClick()">
+                <i class="bi bi-cart"></i> Cart <span id="cart-count">0</span>
+            </button>
+            
+            <button id="loginButton">Login</button>
+
+            <div id="authContainer" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h1 id="form-title">Login</h1>
+                    <form id="auth-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div id="email-group" class="form-group" style="display: none;">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </form>
+                    <div class="toggle">
+                        <p id="toggle-text">Don't have an account? <a href="#" id="toggle-link">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="nav-logo col-2">
+        <img src="image/Shi.jpeg" alt="Shinu" width="100%" height="100%">
+    </div>
+
+    <main>
+        <section id="home">
+            <img src="image/img1.png" alt="Shinu" width="100%" height="100%">
+        </section>
+
+
+        <section id="products" class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product" data-name="Premium Dog Food" data-price="6000">
+                    <img src="image/img2.jpg" alt="Dog Food">
+                    <h3>Premium Dog Food</h3>
+                    <p>৳6,000.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Comfortable Cat Bed" data-price="4000">
+                    <img src="image/img3.jpg" alt="Cat Bed">
+                    <h3>Comfortable Cat Bed</h3>
+                    <p>৳4,000.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Bird Feeder" data-price="300">
+                    <img src="image/img4.jpg" alt="Bird Feeder">
+                    <h3>Bird Feeder</h3>
+                    <p>৳300.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Cat Food" data-price="6000">
+                    <img src="image/img5.jpg" alt="Cat Food">
+                    <h3>Cat Food</h3>
+                    <p>৳6,000.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Cat Litter" data-price="4000">
+                    <img src="image/img6.jpg" alt="Cat Litter">
+                    <h3>Cat Litter</h3>
+                    <p>৳4,000.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Hamster Cage" data-price="300">
+                    <img src="image/img7.jpg" alt="Hamster Cage">
+                    <h3>Hamster Cage</h3>
+                    <p>৳300.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Carriage Handbag" data-price="1800">
+                    <img src="image/img8.jpg" alt="Carriage Handbag">
+                    <h3>Carriage Handbag</h3>
+                    <p>৳1,800.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-name="Rabbit Food" data-price="400">
+                    <img src="image/img9.jpg" alt="Rabbit Food">
+                    <h3>Rabbit Food</h3>
+                    <p>৳400.00</p>
+                    <div class="cart-container">
+                        <button class="cart-button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>At Shinu's, we are passionate about providing the best products for your beloved pets. From furry friends to feathery companions and even scaly buddies, our wide range of pet essentials ensures they are safe, happy, and healthy.</p> 
+              </section>
+
+        <section id="blogs" class="blog-section">
+            <h2>Latest Blogs</h2>
+            <div class="blog">
+                <img src="image/img10.jpeg " alt="Pet Care Tips">
+                <h3>5 Tips for Happy Pets</h3>
+                <p>Learn how to keep your pets happy and healthy with these essential tips...</p>
+            </div>
+            <div class="blog">
+                <img src="image/img11.jpg " alt="Dog Training">
+                <h3>Dog Training 101</h3>
+                <p>Master the basics of dog training techniques and build a stronger emotional bond with your pup...</p>
+            </div>
+            <div class="blog">
+                <img src="image/img12.jpeg" alt="Cat Grooming">
+                <h3>Groom your Cat.</h3>
+                <p>Discover simple and effective grooming techniques to keep your cat clean and happy...</p>
+            </div>
+        </section>
+
+        <section id="policies" class="policies">
+            <h2>Our Policies</h2>
+            <p>Learn more about our policies regarding product returns, shipping, and more..</p>
+        </section>
+    </main>
+
+    <div class="cartTab" >
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="total">Total: ৳<span id="cart-total">0</span></div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Pet Store | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
